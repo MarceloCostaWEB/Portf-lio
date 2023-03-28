@@ -1,0 +1,137 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  gap: 40px;
+  list-style: none;
+  width: 60%;
+}
+
+.ul li {
+  display: flex;
+}
+
+.ul li a {
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+.ul li a span {
+  align-self: center;
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.ul a .icon {
+  background: linear-gradient(123deg, var(--black-color) , var(--purple-color) 98%);
+  border-radius: 50%;
+  color: var(--snow-color);
+  display: block;
+  font-size: 10px;
+  height: 40px;
+  padding: 10px;
+  position: relative; 
+  text-align: center;
+  transition: .5s;
+  width: 40px;
+}
+
+.ul a .icon::before {
+  background: var(--lightPurple-color);
+  border-radius: 50%;
+  content: '';
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transform: scale(.9);
+  transition: .5s;
+  width: 100%;
+  z-index: -1;
+}
+
+.ul a:hover::before > .icon {
+  box-shadow: 0 0 15px var(--lightPurple-color);
+  transform: scale(1.1);
+}
+
+.ul a:hover > .icon {
+  box-shadow: 0 0 5px var(--lightPurple-color);
+  color: var(--lightPurple-color);
+  text-shadow: 0 0 5px var(--lightPurple-color);
+}
+
+.ul a:hover > span {
+  background: linear-gradient(90deg, var(--lightPurple-color) , var(--snow-color) 130%);
+  background-clip: text;
+  color: transparent;
+  text-decoration: none;
+}
+
+.ul a span:after  {
+  background: transparent;
+  content: ''; 
+  display: block;
+  height: 3px;
+  margin-left: auto;
+  transition: width .5s ease, background-color .5s ease;
+  width: 0px;
+}
+
+.ul a:hover span:after {
+  width: 100%;
+  background: linear-gradient(90deg, var(--black-color) , var(--purple-color) 91%);
+}
+
+@media screen and (max-width: 600px) {
+  .ul {
+    display: flex;
+    padding-left: 0;
+    margin-left: -90px;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ul li a span {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 0;
+  }
+  
+}
+
+@media screen and (max-height: 600px) {
+  .contacts {
+    height: 100%;
+  }
+  .section {
+    margin-top: 20px;
+  }
+}

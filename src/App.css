@@ -1,5 +1,11 @@
 :root {
-  --off-white: #fafafa;
+  --black-color:#121214;
+  /* --purple-color:#985EBF; */
+  --purple-color:#4C0677  ;
+  --lightPurple-color:#D3BDF2;
+  --gray-color:#434959;
+  --snow-color:#E4EAF2;
+  --babyBlue-color:#8DE0F2;
 }
 .nav {
   background-color: var(--off-white);
@@ -14,6 +20,7 @@
 .nav-logo {
   height: 60px;
   width: 60px;
+  border-radius: 40px;
 }
 
 .nav-logo:hover {
@@ -31,9 +38,10 @@
 }
 
 .nav-item {
-  display: inline;
-  margin-left: 2rem;
-  color: #333;
+  display: inline-block;
+  margin-left: 1rem;
+  color: #000000;
+  text-align: right;
 }
 
 .nav-item:hover {
@@ -41,8 +49,6 @@
   cursor: pointer;
 }
 
-.section {
-}
 
 .section-dark {
   background: #333;

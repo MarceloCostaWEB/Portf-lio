@@ -1,0 +1,86 @@
+.test {
+  height: 100%;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.aboutContainer {
+  margin-left: 15px;
+  height: 100%;
+  width: 40%;
+  margin-top: 30px;
+}
+
+.aboutContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.aboutContainer p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .aboutContainer {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .about {
+    height: 100%;
+  }
+
+  .aboutContainer {
+    width: 80%;
+  }
+}
+
+.skills {
+  display: flex;
+  height: 100%;
+  width: 7;
+}
+
+.hardSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 40%;
+}
+
+.hardSkills h2 {
+  width: 100%;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.hardSkills img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.hardSkills p {
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+.softSkills {
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+}

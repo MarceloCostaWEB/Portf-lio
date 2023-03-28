@@ -1,43 +1,40 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Section from "./Components/Section";
-import dummyText from "./DummyText";
+import Contacts from "./pages/Contacts";
+import Home from "./pages/Home";
+import Projetos from "./pages/Projetos";
+import About from "./pages/Sobre";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Navbar />
         <Section
-          title="Section 1"
-          subtitle={dummyText}
-          dark={true}
-          id="section1"
-        />
-        <Section
-          title="Section 2"
-          subtitle={dummyText}
+          title=""
+          subtitle= {<Home />}
           dark={false}
-          id="section2"
+          id="Home"
         />
         <Section
-          title="Section 3"
-          subtitle={dummyText}
+          title="Projetos"
+          subtitle={<Projetos />}
           dark={true}
-          id="section3"
+          id="Projetos"
         />
         <Section
-          title="Section 4"
-          subtitle={dummyText}
+          title=""
+          subtitle={<About />}
           dark={false}
-          id="section4"
+          id="Sobre"
         />
         <Section
-          title="Section 5"
-          subtitle={dummyText}
+          title="Contatos"
+          subtitle={<Contacts />}
           dark={true}
-          id="section5"
+          id="Contatos"
         />
       </div>
     );

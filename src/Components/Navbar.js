@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logo from "../logo.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
+import img from "../Data/images/WhatsApp Image 2023-03-28 at 11.44.09.jpeg"
 
 export default class Navbar extends Component {
   scrollToTop = () => {
@@ -12,70 +12,58 @@ export default class Navbar extends Component {
       <nav className="nav" id="navbar">
         <div className="nav-content">
           <img
-            src={logo}
+            src={img}
             className="nav-logo"
-            alt="Logo"
+            alt="foto perfil"
             onClick={this.scrollToTop}
           />
           <ul className="nav-items">
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section1"
+                to="Home"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 1
+                Home
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section2"
+                to="Projetos"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 2
+                Projetos
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section3"
+                to="Sobre"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 3
+                Sobre
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section4"
+                to="Contatos"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
               >
-                Section 4
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                activeClass="active"
-                to="section5"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-              >
-                Section 5
+                Contatos
               </Link>
             </li>
           </ul>
